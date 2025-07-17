@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryDetailCollectionViewCell" id="gTV-IL-0wX" customClass="GalleryDetailCollectionViewCell" customModule="SouleAce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="155" height="172"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="155" height="172"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yuw-Bl-bfV">
+                        <rect key="frame" x="0.0" y="0.0" width="155" height="172"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zTx-iL-5dJ">
+                                <rect key="frame" x="0.0" y="0.0" width="155" height="172"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="MO7-Zs-7ui">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="125"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="125" id="sXq-OE-zV2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Dm-Tk-svt">
+                                        <rect key="frame" x="0.0" y="125" width="155" height="47"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Download" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylX-pg-k0H">
+                                                <rect key="frame" x="30" y="5" width="120" height="37"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.down.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7WL-Rd-ENE">
+                                                <rect key="frame" x="5" y="6" width="20" height="35.666666666666671"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="bDJ-K0-3eW"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ad8-Fr-5lp">
+                                                <rect key="frame" x="0.0" y="0.0" width="155" height="47"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="downloadAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="aTt-Vm-0th"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="7WL-Rd-ENE" firstAttribute="top" secondItem="4Dm-Tk-svt" secondAttribute="top" constant="5" id="Efv-BC-YgB"/>
+                                            <constraint firstItem="ylX-pg-k0H" firstAttribute="leading" secondItem="7WL-Rd-ENE" secondAttribute="trailing" constant="5" id="NAD-YP-M1S"/>
+                                            <constraint firstAttribute="bottom" secondItem="ylX-pg-k0H" secondAttribute="bottom" constant="5" id="NHb-GK-Vhl"/>
+                                            <constraint firstItem="ylX-pg-k0H" firstAttribute="top" secondItem="4Dm-Tk-svt" secondAttribute="top" constant="5" id="UAB-mL-0M5"/>
+                                            <constraint firstItem="7WL-Rd-ENE" firstAttribute="leading" secondItem="4Dm-Tk-svt" secondAttribute="leading" constant="5" id="UyI-Ot-Pf6"/>
+                                            <constraint firstItem="ad8-Fr-5lp" firstAttribute="leading" secondItem="4Dm-Tk-svt" secondAttribute="leading" id="XQa-xd-wDZ"/>
+                                            <constraint firstItem="ad8-Fr-5lp" firstAttribute="top" secondItem="4Dm-Tk-svt" secondAttribute="top" id="efR-zj-bUa"/>
+                                            <constraint firstAttribute="trailing" secondItem="ylX-pg-k0H" secondAttribute="trailing" constant="5" id="kkM-ak-RZ5"/>
+                                            <constraint firstAttribute="bottom" secondItem="ad8-Fr-5lp" secondAttribute="bottom" id="nFF-M2-9ZN"/>
+                                            <constraint firstAttribute="trailing" secondItem="ad8-Fr-5lp" secondAttribute="trailing" id="piz-xD-JVe"/>
+                                            <constraint firstAttribute="bottom" secondItem="7WL-Rd-ENE" secondAttribute="bottom" constant="5" id="xKr-sI-YaI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="zTx-iL-5dJ" firstAttribute="top" secondItem="yuw-Bl-bfV" secondAttribute="top" id="4qV-QD-Usp"/>
+                            <constraint firstAttribute="bottom" secondItem="zTx-iL-5dJ" secondAttribute="bottom" id="jdY-VN-Xps"/>
+                            <constraint firstItem="zTx-iL-5dJ" firstAttribute="leading" secondItem="yuw-Bl-bfV" secondAttribute="leading" id="qAa-mH-ydQ"/>
+                            <constraint firstAttribute="trailing" secondItem="zTx-iL-5dJ" secondAttribute="trailing" id="sSR-8R-dA5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yuw-Bl-bfV" secondAttribute="bottom" id="2Bl-1G-M5X"/>
+                <constraint firstItem="yuw-Bl-bfV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9Ob-EU-7IZ"/>
+                <constraint firstAttribute="trailing" secondItem="yuw-Bl-bfV" secondAttribute="trailing" id="T8n-nA-3kW"/>
+                <constraint firstItem="yuw-Bl-bfV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xaZ-1M-Suu"/>
+            </constraints>
+            <size key="customSize" width="155" height="172"/>
+            <connections>
+                <outlet property="downloadView" destination="4Dm-Tk-svt" id="LaE-iV-wpo"/>
+                <outlet property="imageView" destination="MO7-Zs-7ui" id="zIx-pd-1dM"/>
+            </connections>
+            <point key="canvasLocation" x="209.92366412213741" y="9.8591549295774659"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrowshape.down.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="download" width="274" height="184"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

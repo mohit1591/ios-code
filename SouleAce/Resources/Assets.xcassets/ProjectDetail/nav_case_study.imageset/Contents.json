@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "nav_case_study.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

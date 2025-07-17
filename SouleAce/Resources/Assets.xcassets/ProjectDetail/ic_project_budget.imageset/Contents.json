@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_project_budget.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

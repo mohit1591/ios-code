@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReportCollectionViewCell" id="gTV-IL-0wX" customClass="ReportCollectionViewCell" customModule="SouleAce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="107" height="121"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="107" height="121"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSi-ue-VzF">
+                        <rect key="frame" x="0.0" y="0.0" width="107" height="121"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pdf_icon1" translatesAutoresizingMaskIntoConstraints="NO" id="9QO-eH-Ucc">
+                                <rect key="frame" x="8" y="8" width="91" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="2yt-XB-CtQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziJ-hc-spn">
+                                <rect key="frame" x="3" y="86" width="101" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ziJ-hc-spn" firstAttribute="top" secondItem="9QO-eH-Ucc" secondAttribute="bottom" constant="8" id="1Hy-sV-jLO"/>
+                            <constraint firstItem="ziJ-hc-spn" firstAttribute="leading" secondItem="dSi-ue-VzF" secondAttribute="leading" constant="3" id="7Jt-Tq-5Rk"/>
+                            <constraint firstAttribute="trailing" secondItem="ziJ-hc-spn" secondAttribute="trailing" constant="3" id="Chw-gc-e87"/>
+                            <constraint firstItem="9QO-eH-Ucc" firstAttribute="leading" secondItem="dSi-ue-VzF" secondAttribute="leading" constant="8" id="Dcl-Y5-Cjv"/>
+                            <constraint firstItem="9QO-eH-Ucc" firstAttribute="top" secondItem="dSi-ue-VzF" secondAttribute="top" constant="8" id="Htw-qv-JCK"/>
+                            <constraint firstAttribute="bottom" secondItem="ziJ-hc-spn" secondAttribute="bottom" constant="8" id="f7p-pr-2vc"/>
+                            <constraint firstAttribute="trailing" secondItem="9QO-eH-Ucc" secondAttribute="trailing" constant="8" id="n1C-UK-984"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dSi-ue-VzF" secondAttribute="bottom" id="H60-8T-mPc"/>
+                <constraint firstAttribute="trailing" secondItem="dSi-ue-VzF" secondAttribute="trailing" id="ZF6-Sn-a42"/>
+                <constraint firstItem="dSi-ue-VzF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m7O-U5-wTK"/>
+                <constraint firstItem="dSi-ue-VzF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sqM-gE-dga"/>
+            </constraints>
+            <size key="customSize" width="107" height="121"/>
+            <connections>
+                <outlet property="imageView" destination="9QO-eH-Ucc" id="S4I-GK-cFb"/>
+                <outlet property="titleLabel" destination="ziJ-hc-spn" id="8LS-Wz-pIe"/>
+            </connections>
+            <point key="canvasLocation" x="173.2824427480916" y="13.732394366197184"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pdf_icon1" width="267" height="328"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

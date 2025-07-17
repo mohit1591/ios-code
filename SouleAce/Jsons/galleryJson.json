@@ -1,0 +1,31 @@
+
+{
+    "success": true,
+    "data": [
+        {
+            "name": "Awards",
+            "id": "1"
+        },
+        {
+            "name": "Volunteering",
+            "id": "2"
+        },
+        {
+            "name": "Inaugration",
+            "id": "3"
+        },
+        {
+            "name": "Others",
+            "id": "4"
+        },
+        {
+            "name": "Media",
+            "id": "5"
+        },
+        {
+            "name": "Project",
+            "id": "6"
+        }
+    ]
+}
+

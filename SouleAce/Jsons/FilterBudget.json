@@ -1,0 +1,28 @@
+{
+"data": [
+  {
+    "budget_id": 0,
+    "budget_name": "Select Budget"
+  },
+  {
+    "budget_id": 1,
+    "budget_name": "<10 Lakhs"
+  },
+  {
+    "budget_id": 2,
+    "budget_name": "10-25 Lakhs"
+  },
+  {
+    "budget_id": 3,
+    "budget_name": "25-50 Lakhs"
+  },
+  {
+    "budget_id": 4,
+    "budget_name": "50 Lakhs-1 Crore"
+  },
+  {
+    "budget_id": 5,
+    "budget_name": ">1 Crore"
+  }
+]
+}

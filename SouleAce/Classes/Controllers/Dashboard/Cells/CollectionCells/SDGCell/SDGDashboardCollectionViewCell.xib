@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SDGDashboardCollectionViewCell" id="gTV-IL-0wX" customClass="SDGDashboardCollectionViewCell" customModule="SouleAce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YNl-2g-J50">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download1" translatesAutoresizingMaskIntoConstraints="NO" id="wr0-7I-DpG">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wr0-7I-DpG" firstAttribute="leading" secondItem="YNl-2g-J50" secondAttribute="leading" id="JNM-b1-D2S"/>
+                            <constraint firstItem="wr0-7I-DpG" firstAttribute="top" secondItem="YNl-2g-J50" secondAttribute="top" id="lT7-EV-WfE"/>
+                            <constraint firstAttribute="trailing" secondItem="wr0-7I-DpG" secondAttribute="trailing" id="tt6-oG-dpR"/>
+                            <constraint firstAttribute="bottom" secondItem="wr0-7I-DpG" secondAttribute="bottom" id="v1i-Cg-VUW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YNl-2g-J50" secondAttribute="bottom" id="46a-E9-33e"/>
+                <constraint firstAttribute="trailing" secondItem="YNl-2g-J50" secondAttribute="trailing" id="CpQ-vr-7yS"/>
+                <constraint firstItem="YNl-2g-J50" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WjG-MO-cwx"/>
+                <constraint firstItem="YNl-2g-J50" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="asR-V7-c6P"/>
+            </constraints>
+            <size key="customSize" width="166" height="141"/>
+            <connections>
+                <outlet property="imageView" destination="wr0-7I-DpG" id="yyG-4A-hbP"/>
+            </connections>
+            <point key="canvasLocation" x="360.30534351145036" y="36.267605633802816"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="download1" width="274" height="184"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
